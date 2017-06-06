@@ -22,13 +22,17 @@ body {
 		background-color:#1d1d1d;
 		opacity:.8;
 		position: relative;
+		overflow:hidden;
+		min-height:50px;
 	}
 
 	header ul {
 		max-width:1024px;
 		margin:0 auto;
 		padding-top:10px;
+		padding-bottom:4%;
 		font-size:13px;
+		display:none;
 	}
 
 	header ul li {
@@ -37,11 +41,74 @@ body {
 		text-decoration: none;
 		color:white;
 		list-style: none;
+		padding: 1% 0 ;
+		font-size:16px;
 	}
 
 	header ul li:hover {
 		color:red;
 		cursor:pointer;
+	}
+
+	#logo-m {
+		position:relative;
+		margin:0 auto;
+		display:block;
+		margin-top:2%;
+		padding-left:10%;
+	}
+
+	#logo-d {
+		display:none;
+	}
+
+	#hamburger {
+		width: 50px;
+		height:30px;
+		top:8px;
+		left:1%;
+		position:absolute;
+		cursor:pointer;
+	}
+
+	.navigation-desktop {
+	  display:block;
+	  width:80%;
+	  min-height:50px;
+	  margin:0 auto;
+	  font-weight: 400;
+	}
+
+	.navigation-mobile {
+	  display:none;
+	  margin:0 auto;
+	  padding-top:20px;
+	  padding-bottom:3%;
+	}
+
+	.nav-tab {
+	  width:25%;
+	  text-align:center;
+	  float:left;
+	  font-size:18px;
+	  padding-top:12px;
+	  font-weight: 400;
+	  cursor:pointer;
+	}
+
+	.hamburger {
+	  width: 50px;
+	  height:30px;
+	  top:8px;
+	  left:1%;
+	  position:absolute;
+	  cursor:pointer;
+	  display:none;
+	}
+
+	.hamburger img {
+	  width:100%;
+	  height:100%;
 	}
 
 	#Slider {
@@ -67,7 +134,7 @@ body {
 	}
 
 	#Featured-Content h2 {
-		padding: 5% 5%; 
+		padding: 5% 0%; 
 	}
 
 	#Featured-Content h2 span {
@@ -80,6 +147,13 @@ body {
 
 	#Featured-Content h4 {
 		color:gray;
+		font-size:22px;
+	}
+
+	#Featured-Content h4 a {
+		color:#e34e33;
+		font-size:13px;
+		text-decoration: none;
 	}
 
 	#Work-Wrap {
@@ -157,16 +231,38 @@ body {
 		position:fixed;
 	}
 
+	header ul {
+		display:block;
+	}
+
 	header ul li {
 		width:10%;
 		text-align: center;
 		text-decoration: none;
 		display:inline-block;
 		color:white;
+		padding: 0;
+		font-size:13px;
+	}
+
+	#logo-m {
+		display:none;
+	}
+
+	#logo-d {
+		display:block;
+	}
+
+	#hamburger {
+		display:none;
+	}
+
+	#Featured {
+		margin-top:-24px;
 	}
 
 	#Featured-Content {
-		max-width:1024px;
+		max-width:900px;
 		margin:0 auto;
 	}
 
@@ -174,16 +270,26 @@ body {
 		padding: 5% 0; 
 	}
 
+	#Work-Wrap {
+		margin-right:-5%;
+	}
+
 	.work {
 		display:inline-block;
 		width:30%;
 		margin-right:2%;
+		vertical-align: top;
+	}
+
+	#Wire-Wrap {
+		margin-right:-5%;
 	}
 
 	.wire {
 		display:inline-block;
 		width:29%;
 		margin-right:3%;
+		vertical-align: top;
 	}
 
 
