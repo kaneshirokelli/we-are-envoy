@@ -1,4 +1,6 @@
-# Installation Instructions
+# Kelli Kaneshiro 
+
+###Installation Instructions
 
 1. ``git clone https://github.com/kaneshirokelli/we-are-envoy.git``
 2. ``npm install``
