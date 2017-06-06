@@ -1,3 +1,151 @@
 @import "bourbon";
 @import "grid-settings";
 @import "neat";
+
+body {
+	padding:0;
+	margin:0; 
+	border:none;
+}
+
+/* -------mobile---------- */
+@media (min-width:320px){
+
+	#Envoy {
+		font-family:arial, san-seirf;
+		position:relative;
+	}
+
+	header {
+		width:100%;
+		margin:0 auto;
+		background-color:#1d1d1d;
+		opacity:.8;
+		position: relative;
+	}
+
+	header ul {
+		max-width:1024px;
+		margin:0 auto;
+		padding-top:10px;
+		font-size:13px;
+	}
+
+	header ul li {
+		width:100%;
+		text-align: center;
+		text-decoration: none;
+		color:white;
+		list-style: none;
+	}
+
+	header ul li:hover {
+		color:red;
+		cursor:pointer;
+	}
+
+	#Slider {
+		max-width:1024px;
+		margin:0 auto;
+	}
+
+	#Slider img {
+		width:100%;
+	}
+
+	#Featured {
+		width:100%;
+		background-color:#1d1d1d;
+		padding-bottom:5%;
+	}
+
+	#Featured-Content {
+		max-width:800px;
+		margin: 0 auto;
+		color:white;
+		margin-top:-25px;
+	}
+
+	#Featured-Content h2 {
+		padding: 5% 5%; 
+	}
+
+	#Featured-Content h2 span {
+		color: #e34e33; 
+	}
+
+	#Featured-Content hr {
+		background-color:#565454;
+	}
+
+	#Featured-Content h4 {
+		color:gray;
+	}
+
+	#Work-Wrap {
+
+	}
+
+	.work{
+		width:100%;
+		/*display:inline-block;*/
+		margin: 0 auto;
+		padding-bottom:5%;
+	}
+
+	.work img {
+		width:100%;
+	}
+
+	.work .title {
+		color:white;
+	}
+
+	.work .title span{
+		color:#67d9da;
+	}
+
+	.work .description {
+		font-size:10px;
+	}
+
+	.work a {
+		font-size:10px;
+		color:#e34e33;
+	}
+
+}
+
+/* --------tablet ---------*/ 
+@media (min-width: 768px) {
+
+}
+/* -------- desktop ---------*/ 
+@media( min-width: 1024px ) {
+
+	header {
+		height:50px;
+		position:fixed;
+	}
+
+	header ul li {
+		width:10%;
+		text-align: center;
+		text-decoration: none;
+		display:inline-block;
+		color:white;
+	}
+
+	#Featured-Content h2 {
+		padding: 5% 0; 
+	}
+
+	.work {
+		display:inline-block;
+		width:30%;
+		margin-right:2%;
+	}
+
+}
+
+
