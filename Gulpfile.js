@@ -1,6 +1,5 @@
 "use strict";
 var gulp = require("gulp"),
-		jquery = require('gulp-jquery'),
 		browserSync = require("browser-sync"),
 		sass = require("gulp-sass"),
 		bourbon = require("node-bourbon").includePaths,
@@ -26,15 +25,6 @@ gulp.task("browserSync", function() {
 			baseDir: "dist"
 		}
 	})
-});
-
-gulp.task('jquery', function () {
-    return gulp.src('./node_modules/jquery/src')
-        .pipe(jquery({
-            flags: ['-deprecated', '-event/alias', '-ajax/script', '-ajax/jsonp', '-exports/global']
-        }))
-        .pipe(gulp.dest('./public/vendor/'));
-    // creates ./public/vendor/jquery.custom.js 
 });
 
 gulp.task('js', function(){

@@ -23,6 +23,10 @@
     "gulp-sass": "^2.1.1",
     "jquery": "^3.2.1",
     "node-bourbon": "^4.2.3",
-    "node-neat": "^1.7.2"
+    "node-neat": "^1.7.2",
+    "slick-carousel-browserify": "^1.6.12"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
   }
 }
