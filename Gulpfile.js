@@ -5,7 +5,7 @@ var gulp = require("gulp"),
 		bourbon = require("node-bourbon").includePaths,
 		browserify = require('gulp-browserify'),
 		neat = require("node-neat").includePaths,
-		concat = require('gulp-concat');
+		concat = require('gulp-concat');		
 
 
 // Compiles all gulp tasks
