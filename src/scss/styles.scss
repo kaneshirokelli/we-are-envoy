@@ -10,27 +10,28 @@ body {
 
 /* Slick Over Rides */  
 .slick-prev:before, .slick-next:before {
-	display:none!important;
+	display:none;
 }
 
 .slick-prev, .slick-next {
-	width:17px!important;
-	height:29px!important;
+	width:17px;
+	height:29px;
+	display:none;
 }
 
 .slick-prev {
-	background-image: url(../images/arrow-left.png)!important;
-	transform: none!important;
-	top: 400px!important;
-	left:900px!important;
+	background-image: url(../images/arrow-left.png);
+	transform: none;
+	top: 400px;
+	left:900px;
 	z-index: 999999;
 }
 
 .slick-next {
-	background-image: url(../images/arrow-right.png)!important;
-	top: 400px!important;
-	right:70px!important;
-	transform: none!important;
+	background-image: url(../images/arrow-right.png);
+	top: 400px;
+	right:70px;
+	transform: none;
 }
 
 
@@ -54,13 +55,15 @@ body {
 		z-index: 99;
 	}
 
-	header ul {
+	#nav-wrap {
 		max-width:1024px;
-		margin:0 auto;
-		padding-top:10px;
-		padding-bottom:4%;
+		margin: 0 auto;
 		font-size:$copy-text;
+	}
+
+	header ul {
 		display:none;
+		padding: 0;
 	}
 
 	header ul li {
@@ -69,7 +72,7 @@ body {
 		text-decoration: none;
 		color:$white;
 		list-style: none;
-		padding: 1% 0 ;
+		padding: 1% 0;
 		font-size:16px;
 	}
 
@@ -79,11 +82,11 @@ body {
 	}
 
 	#logo-m {
-		position:relative;
-		margin:0 auto;
-		display:block;
-		margin-top:2%;
-		padding-left:10%;
+		position: relative;
+	    margin: 0 auto;
+	    display: block;
+	    margin-bottom: 2%;
+    	margin-top: 3%;
 	}
 
 	#logo-d {
@@ -99,14 +102,130 @@ body {
 		cursor:pointer;
 	}
 
+	#twitter-btn {
+		width: 80px;
+	    height: 40px;
+	    background-color: #464646;
+	    position: absolute;
+	    top: 5px;
+	    right:5px;
+	}
+
+	#tweet {
+		color:$twitter;
+		font-weight:bold;
+	}
+
+	#tweet img {
+		padding-left:10px;
+		padding-top:12px;
+	}
+
+	#tweet p {
+		display:none;
+	}
+
+	#plus {
+		width:40px;
+		height:40px;
+		background-color:$blood-orange;
+		color:white;
+		font-size:36px;
+		text-align: center;
+		float:right;
+	}
+
 	/* ------- Slider ---------- */
+
+	.slick-slide {
+		position:relative;
+	}
+
+
 	#Envoy-Slider {
+		width:100%;
 		max-width:1024px;
 		margin:0 auto;
 	}
 
-	#Envoy-Slider img {
+	.e-slide {
+
+	}
+
+	.e-slide img{
 		width:100%;
+		position: relative;
+	}
+
+	.e-slide .slide-text {
+		position:absolute;
+		z-index: 9999;
+	}
+
+	.slide-text .title {
+		margin:0;
+		text-transform: uppercase;
+		font-weight:600;
+		font-size:1rem;
+		line-height: 1rem;
+	}
+
+	.slide-text .info {
+	    color: #9f9f9f;
+	    font-size: .3rem;
+    	line-height: 0.5rem;
+	}
+
+	/* ------ Slide 1 ---- */ 
+
+	#slide1 .slide-text {
+		width:35%;
+		margin-top:10%;
+		margin-left:5%;
+	}
+
+	#slide1 .title{
+		color:#d8141a;
+	}
+
+	/* ------ Slide 2 ---- */ 
+
+	#slide2 .slide-text{
+		width:50%;
+		margin-top:4%;
+		margin-left:50%;
+	}
+
+	#slide2 .title{
+		color:#d8141a;
+	}
+
+	/* ------ Slide 3 ---- */ 
+
+	#slide3 .slide-text {
+		width:41%;
+		margin-top:4%;
+		margin-left:5%;
+	}
+
+	#slide3 .title{
+		color:#f68f1e;
+	}
+
+	#slide3 .info {
+		color:white;
+	}
+
+	/* ------ Slide 4 ---- */ 
+
+	#slide4 .slide-text {
+		width:50%;
+		margin-top:5%;
+		margin-left:10%;
+	}
+
+	#slide4 .title {
+		color:#2162bc;
 	}
 
 	/* ------- Featured Section---------- */
@@ -214,6 +333,46 @@ body {
 /* --------tablet ---------*/ 
 @media (min-width: 768px) {
 
+	/* ------ Slider -------*/ 
+
+	.slide-text .title {
+		font-size:2rem;
+		line-height: 2rem;
+	}
+
+	.slide-text .info {
+		font-size: .7rem;
+    	line-height: 0.8rem;
+	}
+
+	/* slide 1 */ 
+	#slide1 .slide-text{
+		width:25%;
+		margin-top:15%;
+		margin-left:15%;
+	}
+
+	/* slide 2 */ 
+	#slide2 .slide-text{
+		width:30%;
+		margin-top:10%;
+		margin-left:50%;
+	}
+
+	/* slide 3 */ 
+	#slide3 .slide-text{
+		width:35%;
+		margin-top:10%;
+		margin-left:10%;
+	}
+
+	/* slide 4 */ 
+	#slide4 .slide-text{
+		width:30%;
+		margin-top:10%;
+		margin-left:15%;
+	}
+
 }
 
 /* -------- desktop ---------*/ 
@@ -249,6 +408,30 @@ body {
 
 	#hamburger {
 		display:none;
+	}
+
+	#twitter-btn {
+		width:200px;
+		height:40px;
+		background-color:#464646;
+		float:right;
+		position:static;
+	}
+
+	#tweet {
+		color:$twitter;
+		font-weight:bold;
+	}
+
+	#tweet img {
+		padding-left:15px;
+		padding-top:10px;
+	}
+
+	#tweet p {
+		float:right;
+		margin-right:25px;
+		display:block;
 	}
 
 	#Featured {
