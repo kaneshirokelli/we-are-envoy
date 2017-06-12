@@ -23,21 +23,13 @@ body {
 
 .slick-prev, .slick-next {
   width: 17px;
-  height: 29px;
-  display: none; }
+  height: 29px; }
 
-.slick-prev {
-  background-image: url(../images/arrow-left.png);
-  transform: none;
-  top: 400px;
-  left: 900px;
-  z-index: 999999; }
+.slick-prev:hover {
+  background: url(../images/arrow-left.png); }
 
-.slick-next {
-  background-image: url(../images/arrow-right.png);
-  top: 400px;
-  right: 70px;
-  transform: none; }
+.slick-next:hover {
+  background: url(../images/arrow-right.png); }
 
 /* ------- mobile ---------- */
 @media (min-width: 320px) {
@@ -133,6 +125,17 @@ body {
     color: #9f9f9f;
     font-size: .3rem;
     line-height: 0.5rem; }
+  .slick-prev {
+    background-image: url(../images/arrow-left.png);
+    transform: none;
+    top: 75%;
+    left: 87%;
+    z-index: 999999; }
+  .slick-next {
+    background-image: url(../images/arrow-right.png);
+    top: 75%;
+    right: 2%;
+    transform: none; }
   /* ------ Slide 1 ---- */
   #slide1 .slide-text {
     width: 35%;
@@ -254,7 +257,13 @@ body {
   #slide4 .slide-text {
     width: 30%;
     margin-top: 10%;
-    margin-left: 15%; } }
+    margin-left: 15%; }
+  .slick-prev {
+    top: 85%;
+    left: 90%; }
+  .slick-next {
+    top: 85%;
+    right: 5%; } }
 
 /* -------- desktop ---------*/
 @media (min-width: 1024px) {

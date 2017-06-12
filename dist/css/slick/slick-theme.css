@@ -22,7 +22,6 @@
   font-size: 0px;
   cursor: pointer;
   background: transparent;
-  color: transparent;
   top: 50%;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
@@ -33,9 +32,7 @@
   .slick-prev:hover, .slick-prev:focus,
   .slick-next:hover,
   .slick-next:focus {
-    outline: none;
-    background: transparent;
-    color: transparent; }
+    outline: none; }
     .slick-prev:hover:before, .slick-prev:focus:before,
     .slick-next:hover:before,
     .slick-next:focus:before {
