@@ -26,6 +26,24 @@ body {
 	background: url(../images/arrow-right.png);
 }
 
+.slick-dots {
+	bottom:10px;
+}
+
+.slick-dots li {
+	background:$blood-orange;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	width:10px;
+	height:10px;
+}
+
+.slick-dots li.slick-active {
+	background:$light-blue;
+	top:-1px;
+}
+
 /* ------- mobile ---------- */
 @media (min-width:320px){
 
@@ -99,6 +117,7 @@ body {
 	    position: absolute;
 	    top: 5px;
 	    right:5px;
+	    cursor: pointer;
 	}
 
 	#tweet {
@@ -335,7 +354,7 @@ body {
 
 }
 
-/* --------tablet ---------*/ 
+/* --------Tablet ---------*/ 
 @media (min-width: 768px) {
 
 	/* ------ Slider -------*/ 

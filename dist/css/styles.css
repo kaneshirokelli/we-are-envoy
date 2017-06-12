@@ -31,6 +31,21 @@ body {
 .slick-next:hover {
   background: url(../images/arrow-right.png); }
 
+.slick-dots {
+  bottom: 10px; }
+
+.slick-dots li {
+  background: #e34e33;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  width: 10px;
+  height: 10px; }
+
+.slick-dots li.slick-active {
+  background: #67d9da;
+  top: -1px; }
+
 /* ------- mobile ---------- */
 @media (min-width: 320px) {
   #Envoy {
@@ -85,7 +100,8 @@ body {
     background-color: #464646;
     position: absolute;
     top: 5px;
-    right: 5px; }
+    right: 5px;
+    cursor: pointer; }
   #tweet {
     color: #67d9da;
     font-weight: bold; }
@@ -229,7 +245,7 @@ body {
     font-size: 11px;
     color: #e34e33; } }
 
-/* --------tablet ---------*/
+/* --------Tablet ---------*/
 @media (min-width: 768px) {
   /* ------ Slider -------*/
   .slide-text .title {
